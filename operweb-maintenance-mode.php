@@ -6,7 +6,7 @@
  * Author:            Fabrizio Ortis | OperWEB
  * Author URI:        https://www.operweb.com
  * License:           GPL v2 or later
- * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ * License URI:       https://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain:       operweb-maintenance-mode
  * Domain Path:       /languages
  */
