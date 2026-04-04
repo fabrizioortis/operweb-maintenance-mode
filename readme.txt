@@ -53,6 +53,9 @@ If you are logged in as an Administrator, you will always see the normal site. T
 
 == Changelog ==
 
+= 2.4.2 =
+* Fixed Parsedown.
+
 = 2.4.1 =
 * Fixed .gitignore.
 

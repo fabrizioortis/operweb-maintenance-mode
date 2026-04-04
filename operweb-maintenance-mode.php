@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       OperWEB Maintenance Mode
  * Description:       Attiva una pagina di manutenzione personalizzata con opzioni.
- * Version:           2.4.1
+ * Version:           2.4.2
  * Author:            Fabrizio Ortis | OperWEB
  * Author URI:        https://www.operweb.com
  * License:           GPL v3 or later
@@ -17,6 +17,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // La funzione 'owm_load_textdomain' è stata rimossa (correzione 2.3.2)
+
+// Parsedown (necessario per leggere le Release di GitHub)
+if ( ! class_exists( 'Parsedown' ) ) {
+    require_once plugin_dir_path( __FILE__ ) . 'Parsedown.php';
 
 // Plugin Update Checker
 require_once plugin_dir_path( __FILE__ ) . 'plugin-update-checker/plugin-update-checker.php';
