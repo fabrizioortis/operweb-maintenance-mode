@@ -4,7 +4,7 @@ Donate link: https://www.operweb.com/contatti/
 Tags: maintenance, maintenance mode, under construction, coming soon, operweb
 Requires at least: 5.0
 Tested up to: 6.8
-Stable tag: 2.4.0
+Stable tag: 2.4.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -52,6 +52,9 @@ If you are logged in as an Administrator, you will always see the normal site. T
 4. The "Settings" shortcut link on the plugins list page.
 
 == Changelog ==
+
+= 2.4.1 =
+* Fixed .gitignore.
 
 = 2.4.0 =
 * Added auto updater library.
