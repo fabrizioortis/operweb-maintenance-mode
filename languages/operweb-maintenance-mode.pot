@@ -1,0 +1,138 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OperWEB Maintenance Mode\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-21 13:23+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.0; wp-6.8.3; php-8.2.28\n"
+"X-Domain: operweb-maintenance-mode"
+
+#: operweb-maintenance-mode.php:143
+msgid "Attiva la modalità manutenzione"
+msgstr ""
+
+#: operweb-maintenance-mode.php:86
+msgid "Attiva Manutenzione"
+msgstr ""
+
+#. Description of the plugin
+msgid "Attiva una pagina di manutenzione personalizzata con opzioni."
+msgstr ""
+
+#: operweb-maintenance-mode.php:161
+msgid ""
+"Carica un logo per sostituire l'icona di default (🛠️). Se rimosso, verrà "
+"usata l'icona di default."
+msgstr ""
+
+#: operweb-maintenance-mode.php:154
+msgid "Carica/Scegli Logo"
+msgstr ""
+
+#: operweb-maintenance-mode.php:114
+msgid "Colore Bordo Superiore"
+msgstr ""
+
+#: operweb-maintenance-mode.php:107
+msgid "Colore Sfondo Pagina"
+msgstr ""
+
+#: operweb-maintenance-mode.php:237
+msgid "Contattaci"
+msgstr ""
+
+#: operweb-maintenance-mode.php:229
+msgid "esperti WordPress"
+msgstr ""
+
+#. Author of the plugin
+msgid "Fabrizio Ortis | OperWEB"
+msgstr ""
+
+#: operweb-maintenance-mode.php:236
+#, php-format
+msgid "Hai bisogno di un sito web, un e-commerce o una consulenza? %s!"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.operweb.com"
+msgstr ""
+
+#: operweb-maintenance-mode.php:318
+msgid "Impostazioni"
+msgstr ""
+
+#: operweb-maintenance-mode.php:79
+msgid "Impostazioni Pagina Manutenzione"
+msgstr ""
+
+#: maintenance.php:15
+msgid "Logo"
+msgstr ""
+
+#: operweb-maintenance-mode.php:218
+msgid "Logo OperWEB"
+msgstr ""
+
+#: operweb-maintenance-mode.php:93
+msgid "Logo Personalizzato (Opzionale)"
+msgstr ""
+
+#. Titolo Pagina
+#: operweb-maintenance-mode.php:60 operweb-maintenance-mode.php:61
+msgid "Manutenzione"
+msgstr ""
+
+#. Name of the plugin
+msgid "OperWEB Maintenance Mode"
+msgstr ""
+
+#: operweb-maintenance-mode.php:227
+#, php-format
+msgid "Questo plugin è offerto gratuitamente da %1$s, la tua agenzia di %2$s."
+msgstr ""
+
+#: operweb-maintenance-mode.php:155
+msgid "Rimuovi Logo"
+msgstr ""
+
+#: operweb-maintenance-mode.php:211
+msgid "Salva Impostazioni"
+msgstr ""
+
+#: operweb-maintenance-mode.php:268
+msgid "Scegli un logo"
+msgstr ""
+
+#: operweb-maintenance-mode.php:144
+msgid ""
+"Se spuntato, solo gli amministratori vedranno il sito. Tutti gli altri "
+"visitatori vedranno la pagina di manutenzione."
+msgstr ""
+
+#: maintenance.php:36 operweb-maintenance-mode.php:170
+msgid "Sito in Manutenzione"
+msgstr ""
+
+#: operweb-maintenance-mode.php:171
+msgid ""
+"Stiamo eseguendo alcuni aggiornamenti per migliorare la tua esperienza. "
+"Torneremo online il prima possibile. Ci scusiamo per il disagio."
+msgstr ""
+
+#: operweb-maintenance-mode.php:100
+msgid "Testo Pagina"
+msgstr ""
+
+#: operweb-maintenance-mode.php:269
+msgid "Usa questo logo"
+msgstr ""

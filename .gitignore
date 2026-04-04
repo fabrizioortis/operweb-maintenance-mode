@@ -1,0 +1,8 @@
+# WordPress & OS junk
+.DS_Store
+thumbs.db
+wp-config.php
+node_modules/
+vendor/
+*.log
+.vscode/
