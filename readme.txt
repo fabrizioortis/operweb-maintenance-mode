@@ -5,10 +5,14 @@ Tags: maintenance, maintenance mode, under construction, coming soon, operweb
 Requires at least: 5.0
 Tested up to: 6.8
 Stable tag: 2.3.3
-License: GPL v2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 A lightweight plugin to display a customizable maintenance page, with your logo, colors, and custom text.
+
+== License ==
+This project is licensed under the GPLv3 License - see the LICENSE file for details.
+Note: The logo and branding assets are proprietary and not covered by the GPLv3 license.
 
 == Description ==
 
