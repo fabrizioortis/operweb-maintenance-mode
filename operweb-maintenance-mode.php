@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 // Parsedown (necessario per leggere le Release di GitHub)
 if ( ! class_exists( 'Parsedown' ) ) {
     require_once plugin_dir_path( __FILE__ ) . 'Parsedown.php';
-
+}
 // Plugin Update Checker
 require_once plugin_dir_path( __FILE__ ) . 'plugin-update-checker/plugin-update-checker.php';
 
