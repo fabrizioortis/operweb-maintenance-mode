@@ -18,6 +18,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 // La funzione 'owm_load_textdomain' è stata rimossa (correzione 2.3.2)
 
+// Plugin Update Checker
+require_once plugin_dir_path( __FILE__ ) . 'plugin-update-checker/plugin-update-checker.php';
+
+$owm_update_checker = \YahnisElsts\PluginUpdateChecker\v5\PucFactory::buildUpdateChecker(
+    'https://github.com/fabrizioortis/operweb-maintenance-mode/', // L'URL della tua repository GitHub
+    __FILE__, // Il file principale del plugin
+    'operweb-maintenance-mode' // Lo slug del tuo plugin
+);
+
+$owm_update_checker->setBranch('main');
+
 /**
  * Funzione principale che mostra la pagina di manutenzione
  */
