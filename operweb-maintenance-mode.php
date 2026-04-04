@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       OperWEB Maintenance Mode
  * Description:       Attiva una pagina di manutenzione personalizzata con opzioni.
- * Version:           2.3.3
+ * Version:           2.4.0
  * Author:            Fabrizio Ortis | OperWEB
  * Author URI:        https://www.operweb.com
  * License:           GPL v2 or later

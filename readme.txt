@@ -53,6 +53,9 @@ If you are logged in as an Administrator, you will always see the normal site. T
 
 == Changelog ==
 
+= 2.4.0 =
+* Added auto updater library.
+
 = 2.3.3 =
 * Fixed all remaining WordPress code standards violations (Security & i18n).
 * Refactored admin footer PHP to correctly pass translator comments.
