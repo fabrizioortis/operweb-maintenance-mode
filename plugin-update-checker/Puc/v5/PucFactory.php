@@ -2,9 +2,24 @@
 
 namespace YahnisElsts\PluginUpdateChecker\v5;
 
-if ( !class_exists(PucFactory::class, false) ):
+class PucFactory {
+    protected static $versions = array();
 
-	class PucFactory extends \YahnisElsts\PluginUpdateChecker\v5p6\PucFactory {
-	}
+    public static function addVersion( $generalClass, $versionedClass, $version ) {
+        self::$versions[ $generalClass ] = $versionedClass;
+    }
 
-endif;
+    public static function buildUpdateChecker( $metadataUrl, $pluginFile, $slug = '' ) {
+        $checker = new class {
+            public function setBranch( $branch ) {
+                return $this;
+            }
+
+            public function setAuthentication( $credentials ) {
+                return $this;
+            }
+        };
+
+        return $checker;
+    }
+}
