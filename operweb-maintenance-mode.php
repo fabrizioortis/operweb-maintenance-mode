@@ -2,13 +2,16 @@
 /**
  * Plugin Name:       OperWEB Maintenance Mode
  * Description:       Attiva una pagina di manutenzione personalizzata con opzioni.
- * Version:           2.4.2
+ * Version:           2.4.3
  * Author:            Fabrizio Ortis | OperWEB
  * Author URI:        https://www.operweb.com
  * License:           GPL v3 or later
  * License URI:       https://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain:       operweb-maintenance-mode
  * Domain Path:       /languages
+ * Requires at least: 5.0
+ * Tested up to:      6.4
+ * Requires PHP:      7.4
  */
 
 // Impedisci l'accesso diretto
@@ -16,7 +19,13 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-// La funzione 'owm_load_textdomain' è stata rimossa (correzione 2.3.2)
+/**
+ * Carica le traduzioni del plugin
+ */
+function owm_load_textdomain() {
+    load_plugin_textdomain( 'operweb-maintenance-mode', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+}
+add_action( 'plugins_loaded', 'owm_load_textdomain' );
 
 // Parsedown (necessario per leggere le Release di GitHub)
 if ( ! class_exists( 'Parsedown' ) ) {
@@ -46,13 +55,19 @@ function owm_maintenance_mode_check() {
     }
     $maintenance_file = plugin_dir_path( __FILE__ ) . 'maintenance.php';
     if ( file_exists( $maintenance_file ) ) {
+        // Usa le funzioni di WordPress per impostare lo status e le intestazioni di cache
         if ( ! headers_sent() ) {
-            header( 'HTTP/1.1 503 Service Unavailable', true, 503 );
+            // Imposta 503 Service Unavailable (consigliato per pagine di manutenzione)
+            status_header( 503 );
+            // Impedisci la cache
+            nocache_headers();
+            // Forza il content-type UTF-8
             header( 'Content-Type: text/html; charset=utf-8' );
+            // Retry-After (in secondi) - indicazione per i bot
             header( 'Retry-After: 3600' );
         }
         include( $maintenance_file );
-        die();
+        exit;
     }
 }
 add_action( 'template_redirect', 'owm_maintenance_mode_check' );
