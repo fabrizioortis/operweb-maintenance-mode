@@ -2,9 +2,10 @@
 Contributors: operweb
 Donate link: https://www.operweb.com/contatti/
 Tags: maintenance, maintenance mode, under construction, coming soon, operweb
-Requires at least: 5.0
-Tested up to: 6.8
-Stable tag: 2.4.1
+Requires at least: 6.0
+Tested up to: 7.0
+Requires PHP: 7.4
+Stable tag: 2.4.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -52,6 +53,12 @@ If you are logged in as an Administrator, you will always see the normal site. T
 4. The "Settings" shortcut link on the plugins list page.
 
 == Changelog ==
+
+= 2.4.4 =
+* Compatibility: Requires at least WordPress 6.0, tested up to 7.0, requires PHP 7.4.
+* Updated Plugin Update Checker to upstream v5.7.
+* Improved maintenance page: status_header(503), nocache_headers(), UTF-8 content type, Retry-After.
+* Textdomain loading restored.
 
 = 2.4.2 =
 * Fixed Parsedown.
